@@ -26,5 +26,17 @@ namespace Bakery.Test
            CollectionAssert.AreEqual(testList, resultList);
 
         }
+
+        [TestMethod]
+        public void FindOrder_test()
+        {
+            Order.ClearAll();
+            Order order1 = new Order("bread", 5);
+            Order order2 = new Order("pastry", 2);
+            Order order3 = new Order("bread", 5);
+
+            Order searchOrder2 = Order.Find(2);
+            Assert.AreEqual(order2, searchOrder2);
+        }
     }
 }
