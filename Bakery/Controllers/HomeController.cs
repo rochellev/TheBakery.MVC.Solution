@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Project.Models;
+using Bakery.Models;
 
-namespace Project.Controllers
+namespace Bakery.Controllers
 {
     public class HomeController : Controller
     {
@@ -10,8 +10,7 @@ namespace Project.Controllers
         [HttpGet("/")]
         public ActionResult Index()
         {
-            ProjectClass starterItem = new ProjectClass("Add first item to To Do List");
-            return View(starterItem);
+            return View();
         }
 
     }
