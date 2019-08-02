@@ -1,10 +1,9 @@
-# Project
+# The Bakery: C# MVC Wep App
 ### By Rochelle Roberts
 -----
 
 ## Description
-* Project template for C# Web Apps
-* Unit testing set up too
+* Bakery website uses the MVC model to keep track of vendors and their purchases.
 
 ## Technologies Used
 * C#
@@ -14,12 +13,12 @@
 * MSTest
 
 ## Installation and Run
-* Follow the following stepts using the terminal
+* From the terminal, follow the steps below. 
 * Click on the local host link (Ctrl + click )
 
 ```sh
-$ git clone 
-$ cd
+$ git clone https://github.com/rochellev/TheBakery.MVC.Solution.git
+$ cd .\TheBakery.MVC.Solution\Bakery
 $ dotnet restore
 $ dotnet run
 ```
@@ -28,21 +27,5 @@ $ dotnet run
 
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
-
-
-## Project Directory
-1. Model Directory
-    * contains project's class files 
-    * this is where your classes go
-2. Project.csproj
-    * things needed to install 
-    * dotnet restore -- will install dependencies
-3. Views
-4. Controllers
-
-## Project.Tests Directory
-1. ModelTests Directory
-    * your tests will be here
-2. Project.Tests.csproj
-    * make sure update the ProjectReference !
-    * run dotnet restore to install the dependencies
+| home page welcomes users, has links | user navigates to website (local host, for now) | user will see splash page |
+| user can create a new vendor by filling out a form | user fills out form | 
