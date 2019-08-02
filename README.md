@@ -3,7 +3,7 @@
 -----
 
 ## Description
-* Bakery website uses the MVC model to keep track of vendors and their purchases.
+* Bakery website uses the MVC model to keep track of vendors and their purchases. I used the To Do List project as a guide for routing the pages.
 
 ## Technologies Used
 * C#
