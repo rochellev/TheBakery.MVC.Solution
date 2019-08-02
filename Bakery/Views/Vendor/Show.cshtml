@@ -24,7 +24,12 @@
        </div>
 
     </div>
-    <a>Add an order for @Model["vendor"].Name</a>
+    <div>
+        <a href="/vendors/@Model["vendor"].Id/orders/new">Add a New Order for @Model["vendor"].Name</a>
+        <a href="/">Back Home</a>
+        <a href="/vendors">Vendor Page</a>
+    </div>
+    
   
 </body>
 </html>
