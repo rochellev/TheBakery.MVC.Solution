@@ -7,7 +7,7 @@
 <body>
   <h1>The Vendor Page</h1>
   <div>
-      <p>This page shows you the List of Vendors </p>
+      <h5>Click on a Vendor to view thier Details!</h5>
       <a href="/vendors/new">Create a new Vendor</a>
       <a href="/">Back to Home</a>
   </div>
@@ -20,7 +20,7 @@
       @foreach (Vendor vendor in Model)
       {
           <h3>
-              <a>@vendor.Name</a>
+              <a href="/vendors/@vendor.Id">@vendor.Name</a>
           </h3>   
       }
   </div>

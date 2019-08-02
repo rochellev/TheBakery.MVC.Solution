@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>@Model["vendor"].Name Order Details</title>
+  
+</head>
+
+<body>
+    <h1>@Model["vendor"].Name Order Details</h1>
+    <div>
+       @using Bakery.Models;
+       @if(@Model["orders"].Count == 0)
+       {
+           <h3>No Orders Yet!</h3>
+       }
+       <div>
+           @foreach (var order in @Model["orders"])
+           {
+               <div>
+                   <h3>@order.Description ....... @order.Price</h3>
+               </div>
+           }
+       </div>
+
+    </div>
+    <a>Add an order for @Model["vendor"].Name</a>
+  
+</body>
+</html>
