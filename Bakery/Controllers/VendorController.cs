@@ -39,7 +39,7 @@ namespace Bakery.Controllers
         }
 
         // new order for given vendor
-        [HttpPost("/vendors/{vendorId}/items")]
+        [HttpPost("/vendors/{vendorId}/orders")]
         public ActionResult Create(int vendorId, string orderDescription, int orderPrice)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
