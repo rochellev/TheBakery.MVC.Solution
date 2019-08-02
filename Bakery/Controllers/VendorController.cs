@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Bakery.Models;
+using System.Collections.Generic;
 
 namespace Bakery.Controllers
 {
@@ -8,7 +9,8 @@ namespace Bakery.Controllers
         [HttpGet("/vendors")]
         public ActionResult Index()
         {
-            return View();
+            List<Vendor> allVendors = Vendor.GetAll();   
+            return View(allVendors);
         }
 
         [HttpGet("/vendors/new")]
